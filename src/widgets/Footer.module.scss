@@ -1,0 +1,61 @@
+@use "@assets/scss/abstracts/tokens" as *;
+
+.root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: $layout-footer-height;
+  padding: $space-4;
+  border-top-left-radius: $radius-card;
+  border-top-right-radius: $radius-card;
+  background-color: $color-surface;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-wrap: wrap;
+    gap: $space-4;
+  }
+}
+
+.brand {
+  color: $color-ink-strong;
+  font-size: $font-size-logo;
+  font-weight: $font-weight-bold;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  height: 100%;
+
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: $space-3;
+}
+
+.columnLoose {
+  gap: $space-7;
+}
+
+.languages {
+  display: flex;
+  gap: $space-2;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.link {
+  color: $color-ink;
+  font-size: $font-size-lead;
+  font-weight: $font-weight-regular;
+}

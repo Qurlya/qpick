@@ -1,0 +1,89 @@
+@use "@assets/scss/abstracts/tokens" as *;
+
+.loading {
+  font-size: $font-size-lead;
+}
+
+.category {
+  margin-bottom: $space-4;
+}
+
+.categoryTitle {
+  margin-bottom: $space-4;
+  color: $color-ink-muted;
+  font-size: $font-size-section;
+  font-weight: $font-weight-semibold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, $card-width));
+  gap: $space-4;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: $card-height;
+  padding: $space-4;
+  border-radius: $radius-card;
+  background-color: $color-surface;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.cardBody {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $space-3;
+}
+
+.cardName {
+  font-size: $font-size-lead;
+  font-weight: $font-weight-semibold;
+}
+
+.cardRating {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: $color-ink-muted;
+  font-size: $font-size-lead;
+  font-weight: $font-weight-semibold;
+}
+
+.cardAside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardPrices {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardPriceActual {
+  color: $color-accent;
+  font-size: $font-size-lead;
+  font-weight: $font-weight-semibold;
+}
+
+.cardPriceOld {
+  color: $color-accent-soft;
+  font-size: $font-size-small;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+}

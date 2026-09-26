@@ -1,0 +1,46 @@
+@use "@assets/scss/abstracts/tokens" as *;
+
+.root {
+  display: flex;
+  height: $layout-header-height;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  color: $color-ink-strong;
+  font-size: $font-size-logo;
+  font-weight: $font-weight-bold;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+}
+
+.basket {
+  position: relative;
+  display: flex;
+}
+
+.basketCounter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: $radius-round;
+  background-color: $color-accent;
+  color: $color-surface;
+  font-size: $font-size-caption;
+  font-weight: $font-weight-semibold;
+}

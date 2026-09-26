@@ -1,0 +1,16 @@
+@use "@assets/scss/abstracts/tokens" as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 $layout-gutter;
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0 $space-4;
+  }
+}
+
+.main {
+  flex: 1;
+}
